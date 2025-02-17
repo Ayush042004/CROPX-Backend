@@ -6,6 +6,7 @@ export const weatherKnowledge = async(req,res)=>{
     console.log(lat,"  ",lon)
 
     const data = await weatherData(lat,lon);
+    console.log(data);
     return res.json(
         {data:data}
     )
