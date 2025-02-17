@@ -10,7 +10,7 @@ export const weatherData = async(latitude,longitude)=>{
 
         const response = await fetch(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`, {
           headers: {
-            'Authorization': 'b82c7c0a-ebad-11ef-bb67-0242ac130003-b82c7c6e-ebad-11ef-bb67-0242ac130003'
+            'Authorization': '5a0df504-ed6a-11ef-b651-0242ac130003-5a0df57c-ed6a-11ef-b651-0242ac130003'
           }
         })
         const data = await response.json()
