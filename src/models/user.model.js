@@ -59,12 +59,10 @@ farmerSchema.methods.generateAccessToken = async function(){
     )
 }
 
-farmerSchema.methods.generateAccessToken = async function(){
+farmerSchema.methods.generateRefreshToken = async function(){
     jwt.sign(
         {
-            _id:this._id,
-            name:this.name,
-            aadharNumber:this.aadharNumber
+            _id:this._id
         },
         process.env.ACCESS_REFRESH_SECRET,
         {

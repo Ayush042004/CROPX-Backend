@@ -1,7 +1,7 @@
 
 export const weatherData = async(latitude,longitude)=>{
 
-        console.log("hello");
+        
         
         const lat = latitude;
         const lng = longitude;

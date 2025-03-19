@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken'
-import mongoose from "mongoose"
 import { Farmer } from '../models/user.model.js';
 
 
@@ -24,8 +23,7 @@ const generateAccessAndRefreshTokens = async(farmerId)=>{
 
 
 export const registerFarmer = async(req,res)=>{
-    console.log(req.body);
-    
+
     try {
         const {name,phoneNumber,aadharNumber,password} = req.body;
     
