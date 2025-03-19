@@ -8,8 +8,8 @@ import { app } from "./app.js";
 
 connectDB()
     .then(() =>
-        app.listen(process.env.PORT,()=>{
-        console.log("Listening")
+        app.listen(3000,()=>{
+        console.log("Listening on")
         }
     ))
     

@@ -1,7 +1,6 @@
 import { weatherData } from "../utils/stormglass.js"
 
 export const weatherKnowledge = async(req,res)=>{
-    
     const { lat, lon } = req.body;
     console.log(lat,"  ",lon)
 

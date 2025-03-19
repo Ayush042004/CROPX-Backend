@@ -14,5 +14,7 @@ export const weatherData = async(latitude,longitude)=>{
           }
         })
         const data = await response.json()
+        console.log(data);
+        
       return data.hours[0]
 }
